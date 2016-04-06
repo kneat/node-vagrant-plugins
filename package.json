@@ -1,0 +1,22 @@
+{
+  "name": "vagrant-plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "lodash": "^4.8.2",
+    "util": "^0.10.3"
+  },
+  "vagrantPlugins": {
+    "vagrant-aws": "*",
+    "vagrant-aws-winrm": "0.0.3",
+    "vagrant-env": "*",
+    "vagrant-vsphere": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}
