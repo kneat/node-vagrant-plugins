@@ -7,8 +7,8 @@ npm install @gx/vagrant-plugins
 
 A module that installs vagrant plugins listed in your package.json **Requires Vagrant >= 1.7.4**
 
-
-### An example of adding plugins, latest and definitive versions below:
+### Example:
+Add a key to your ```package.json``` called ```"vagrantPlugins"```.
 ```
 "vagrantPlugins": {
     "vagrant-aws": "*",
@@ -17,3 +17,15 @@ A module that installs vagrant plugins listed in your package.json **Requires Va
     "vagrant-vsphere": "*"
  }
 ```
+
+Gulp examaple:
+```
+var gulp = require('gulp');
+var vp = require('@gx/vagrant-plugins');
+
+gulp.task('install', function () {
+    vp();
+});
+```
+
+
