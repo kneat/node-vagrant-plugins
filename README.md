@@ -1,11 +1,11 @@
 
 # Node Vagrant Plugins
 
-```
-npm install @gx/vagrant-plugins
-```
+A module that installs vagrant plugins listed in your package.json **Requires Vagrant**
 
-A module that installs vagrant plugins listed in your package.json **Requires Vagrant >= 1.7.4**
+```
+npm install vagrant-plugins
+```
 
 ### Example:
 Add a key to your ```package.json``` called ```"vagrantPlugins"```.
@@ -21,10 +21,25 @@ Add a key to your ```package.json``` called ```"vagrantPlugins"```.
 Gulp examaple:
 ```
 var gulp = require('gulp');
-var vp = require('@gx/vagrant-plugins');
+var vp = require('vagrant-plugins');
 
 gulp.task('install', function () {
     vp();
+});
+```
+
+You can also pass in the plugins you want:
+```
+var gulp = require('gulp');
+var vp = require('vagrant-plugins');
+
+gulp.task('install', function () {
+    vp({
+        plugins: {
+            "vagrant-aws": "*",
+            "vagrant-vsphere": "*"
+        }
+    });
 });
 ```
 
