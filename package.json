@@ -1,5 +1,6 @@
 {
   "name": "@gx/vagrant-plugins",
+  "bin": "vagrant-plugins",
   "version": "1.0.6",
   "description": "",
   "main": "index.js",
