@@ -8,7 +8,7 @@ var mergedOptions = {};
 var defaultOptions = {
    update: false,
    plugins: (function() {
-      var parentPackge = require('./package.json');
+      var parentPackge = require('../../../package.json');
       
       if(typeof parentPackge.vagrantPlugins !== "undefined") {
          return parentPackge.vagrantPlugins;
