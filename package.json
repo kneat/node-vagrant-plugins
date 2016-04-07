@@ -1,7 +1,7 @@
 {
   "name": "vagrant-plugins",
   "description": "vagrant plugin wrapper, Installs vagrant plugins listed in your package.json",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "repository": "kneat/gulp-vagrant-plugins",
   "author": "Shane <shanedaly2142@gmail.com.com>",
   "main": "index.js",
