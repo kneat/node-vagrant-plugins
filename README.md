@@ -1,7 +1,7 @@
 
 # Node Vagrant Plugins
 
-A module that installs vagrant plugins listed in your package.json **Requires Vagrant**
+A module that installs vagrant plugins listed in your package.json. __Requires Vagrant.__
 
 ```
 npm install vagrant-plugins
