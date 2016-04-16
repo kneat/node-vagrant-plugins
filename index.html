@@ -19,51 +19,7 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="node-vagrant-plugins" class="anchor" href="#node-vagrant-plugins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Node Vagrant Plugins</h1>
-
-<p>A module that installs vagrant plugins listed in your package.json. <strong>Requires Vagrant.</strong></p>
-
-<pre><code>npm install vagrant-plugins
-</code></pre>
-
-<h3>
-<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example:</h3>
-
-<p>Add a key to your <code>package.json</code> called <code>"vagrantPlugins"</code>.</p>
-
-<pre><code>"vagrantPlugins": {
-    "vagrant-aws": "*",
-    "vagrant-aws-winrm": "0.0.3",
-    "vagrant-env": "*",
-    "vagrant-vsphere": "*"
- }
-</code></pre>
-
-<p>Gulp examaple:</p>
-
-<pre><code>var gulp = require('gulp');
-var vp = require('vagrant-plugins');
-
-gulp.task('install', function () {
-    vp();
-});
-</code></pre>
-
-<p>You can also pass in the plugins you want:</p>
-
-<pre><code>var gulp = require('gulp');
-var vp = require('vagrant-plugins');
-
-gulp.task('install', function () {
-    vp({
-        plugins: {
-            "vagrant-aws": "*",
-            "vagrant-vsphere": "*"
-        }
-    });
-});
-</code></pre>
+      <p><a href="http://kneat.github.io/node-vagrant-plugins">http://kneat.github.io/node-vagrant-plugins</a></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/kneat/node-vagrant-plugins">Node-vagrant-plugins</a> is maintained by <a href="https://github.com/kneat">kneat</a>.</span>

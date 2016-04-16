@@ -1,6 +1,6 @@
 {
   "name": "Node-vagrant-plugins",
   "tagline": "",
-  "body": "\r\n# Node Vagrant Plugins\r\n\r\nA module that installs vagrant plugins listed in your package.json. __Requires Vagrant.__\r\n\r\n```\r\nnpm install vagrant-plugins\r\n```\r\n\r\n### Example:\r\nAdd a key to your ```package.json``` called ```\"vagrantPlugins\"```.\r\n```\r\n\"vagrantPlugins\": {\r\n    \"vagrant-aws\": \"*\",\r\n    \"vagrant-aws-winrm\": \"0.0.3\",\r\n    \"vagrant-env\": \"*\",\r\n    \"vagrant-vsphere\": \"*\"\r\n }\r\n```\r\n\r\nGulp examaple:\r\n```\r\nvar gulp = require('gulp');\r\nvar vp = require('vagrant-plugins');\r\n\r\ngulp.task('install', function () {\r\n    vp();\r\n});\r\n```\r\n\r\nYou can also pass in the plugins you want:\r\n```\r\nvar gulp = require('gulp');\r\nvar vp = require('vagrant-plugins');\r\n\r\ngulp.task('install', function () {\r\n    vp({\r\n        plugins: {\r\n            \"vagrant-aws\": \"*\",\r\n            \"vagrant-vsphere\": \"*\"\r\n        }\r\n    });\r\n});\r\n```\r\n\r\n",
+  "body": "http://kneat.github.io/node-vagrant-plugins",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
